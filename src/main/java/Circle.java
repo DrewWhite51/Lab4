@@ -10,6 +10,7 @@
  */
 public class Circle {
     
+        
     private double radius;
     private final double pi = 3.14159;
     
@@ -26,9 +27,6 @@ public class Circle {
         radius = r;
     }
     
-    public double returnRadius(){
-        return radius;
-    }
     
     public double returnArea() {
         return pi * radius * radius;
