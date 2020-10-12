@@ -1,6 +1,7 @@
 
 import java.util.Scanner;
 
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -14,6 +15,9 @@ import java.util.Scanner;
 public class Driving {
     
     public static void main(String[] args) {
+        
+        
+        
         int yearModel = 0;
         String make = " ";
         int speed;
@@ -26,12 +30,40 @@ public class Driving {
         yearModel = keyboard.nextInt();
         
         System.out.println("What is the make of your car?");
+        keyboard.nextLine();
         make = keyboard.nextLine();
         
         System.out.println("What is the beginning speed of the car?");
         speed = keyboard.nextInt();
         
         car.setSpeed(speed);
+        
+
+        for (int i = 0; i < 5; i++){
+            car.accelerate();
+            System.out.println(car.getSpeed());
+        
+          
+        }
+        
+
+        
+        System.out.println("The " + yearModel + " " + make + " accelerated to " + car.getSpeed() + " mph.");
+        
+        
+        
+        
+         for (int i = 0; i < 5; i++){
+            car.brake();
+            System.out.println(car.getSpeed());
+        
+          
+        }
+         
+         System.out.println("The " + yearModel + " " + make + " slowed down to " + car.getSpeed() + " mph.");
+        
     }
+    
+
     
 }

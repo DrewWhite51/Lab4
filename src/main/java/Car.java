@@ -40,11 +40,11 @@ public class Car {
         speed -=5;
     }
     
-    public void getSpeed(int speed){
-        this.speed = speed;
+    public int getSpeed(int speed){
+        return speed;
     }
 
     void setSpeed(int speed) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.speed = speed;
     }
 }
